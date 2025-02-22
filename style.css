@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* 
+
+هذي عبارة عن مكاتب اخذناها من جوجل
+  https://cdnjs.com/libraries/font-awesome/5.15.4 
+
+*/
+*{
+    font-family: "Poppins", sans-serif;
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+scroll-behavior: smooth;
+}
+header{
+background-color: aliceblue;
+width: 100%;
+position: fixed; /* يخلي الناف ثابت */
+z-index: 999;/*نفس الفكرة اللي فوق */
+display: flex;
+justify-content: space-between; 
+align-items: center;
+padding:10px 200px; /*  اول قيمة توب وبتن والقيمة الثانية يسار ويمين*/ 
+}
+
+.logo{
+text-decoration: none; /* خط الي تحت الرابط*/
+color: blue;
+text-transform: uppercase; /* تتحكم بحجم الحروف*/
+font-weight: 700;
+font-size: 1.8em; /* الخط بيكون ريليتف*/
+
+}
+
+
+
+.navgation a{
+    color: blue;
+    text-decoration: none;
+    font-weight: 500; 
+    font-size: 1.1em;
+    padding-left: 30px;
+}
+
+
+.navgation a:hover{
+
+color: #5e0288; /* لما تحط الماوس يتغير اللون */ 
+}
+section{
+
+    padding: 100px 200px;
+}
+.main{
+
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(images/s5.jpg) no-repeat ;
+    background-size:cover; /* هذي تخلي الصورة على الصفحة كامل*/ 
+background-position: center;
+background-attachment: fixed; /* لما نزل الى تحت تكون الصورة مثبتة*/
+}
+.main h2{
+color: #fff;
+font-size: 1.4em;
+font-weight: 500;
+
+}
+
+.main h2 span{
+color: #4e9eff;
+font-size: 3em;
+font-weight: 600;
+}
+
+.main h3{
+    color: #4e9eff;
+    font-size: 2em;
+  font-weight: 700;
+letter-spacing:1px; /* هذي المسافة بين الحروف*/
+margin-top: 10px;
+margin-bottom: 30px;
+}
+.main-btn{
+
+    color: #fff;
+    background-color: #3a6cf4;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 500;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px;/* هذا الاطار الي حول اللكلمة*/
+margin-bottom: 30px;
+transition: 0.7s ease /*التحول حق اللون خلال كم ثواني يحدث*/
+}
+.main-btn:hover{
+
+    background-color: #01154d;
+    transform: scale(1.1);/* هذي داله تكبر اللون */
+}
+.social-media a{
+
+    color: #fff;
+    font-size: 1.7em;
+    padding-right: 25px;
+}
+ .title{
+    display: flex;
+justify-content:center;
+color: #3a6cf4;
+font-size:2.2em;
+font-weight:800;
+margin-bottom:30px; /* الى تحت */
+
+ }
+
+.content{
+display: flex;
+justify-content: center; /* بتخلي العناصر بالنص*/
+flex-direction: row; /*  يخلي العناصر جمب بعض واذا تبغى تحت بعض كولوم*/
+flex-wrap: wrap; /* اذا كان في عناصر كثير بينزل بعضهم الى تحت واذا خليناه طبيعي بيتحاوصو بنفس الخط*/
+}
+/* بعد هذا نضبط ماداخل كونتنت */
+.card{
+
+background-color: #fff;
+width: 21.25em;/* نضرب الرقم ب16 يطلع لنا كم بكسل*/
+box-shadow: 0 10px 25px rgba(1 1 1/15%); /* هذي الي تخلي لك الحواف */
+border-radius: 10px;
+padding: 25px;/* المسافةبين الكلمات*/
+margin: 15px;/*المساحة بين الاثنين العناصر*/
+transition: 0.7s ease
+}
+.card:hover{
+
+    transform: scale(1.1); /* هذي الي تكبر الانميشن*/
+}
+.icon{
+
+    color: #3a6cf4;
+    font-size: 8em;
+    text-align: center;
+}
+.info{
+
+    text-align: center;
+}
+.info h3{
+    color:#3a6cf4; 
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+    /* من هنا تنسيق الصور */
+}
+.projects{
+
+background-color: #1e1e1f;
+
+}
+.projects.content{
+margin-top: 30px;
+
+}
+.projects-card
+{
+background-color: #fff;
+border: 2px solid #2f04ec;
+min-height: 14em; /* اقل شي بيكون حجمة في حاله صغرت الشاشة*/
+width:23em;
+overflow: hidden; /* تضبط الصورة*/
+border-radius: 10px;
+margin: 20px;
+transition: 1.7s ease;
+}
+.projects-card:hover{
+transform: scale(1.1);
+}
+.projects-image image{
+width: 100%;
+
+}
+.projects-card:hover .projects-image{
+opacity: 0.8; /*شفافية الصورة */
+}
+.projects-info{
+
+    padding: 1em;
+}
+.projec-catogry{
+
+    font-size: 0.8em;
+    color: #000;
+}
+.projects-title{
+display: flex;
+justify-content: space-between; /*هذا يخلي مسافة بين العنصرين نفس فكرة النافبار*/
+text-transform: uppercase;
+font-weight: 800;
+margin-top: 10px;
+}
+.more-detalis{
+
+    text-decoration: none;
+    color: #3a6cf4;
+}
+.more-detalis:hover{
+color: #b007b6;
+
+}
+.content .icon{
+font-size: 4.4em;
+}
+.content .info h3{
+    color: #000;
+}
+.content .p{
+
+    font-size: 1.5em;
+}
+.footer{
+    background-color: #1e1e1f;
+color: #fff;
+padding: 2em;
+display: flex;
+justify-content: space-between;
+}
+
+.footer-title{
+font-size: 1.3em;
+font-weight: 600;
+
+}
+.footer-title.span{
+color: #6112f3;
+}
+/*  responsiveلجعل الموقع */
+@media(max-width:1023px){
+header{
+    padding: 12px 20px;
+}
+
+.navgation a{
+
+padding-left: 10px;
+}
+.title{
+font-weight: 1.8em;
+
+
+}
+section{
+padding: 80px 20px;
+
+}
+.main-content h2{
+font-size: 1em;
+
+}
+.main-content h3{
+
+    font-size: 1.6em;
+}
+.content{
+   
+ flex-direction: column;
+ align-items: center;
+}
+}
+
+@media( max-width:641px)
+{
+body{
+font-size: 12px;
+
+}
+.main-content h3{
+
+    font-size: 1.4em;
+}
+
+}
+
+@media(max-width:300px)
+{
+
+    body{
+font-size: 10px;
+
+    }
+}
