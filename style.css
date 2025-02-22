@@ -12,7 +12,7 @@ scroll-behavior: smooth;
 }
 header{
 box-shadow: 0 4px 6px rgb(0 0 0 / 23%);
-background-color: aliceblue;
+background: linear-gradient(135deg, #001f3f, #004080, #0080ff);
 width: 100%;
 position: fixed; /* يخلي الناف ثابت */
 z-index: 999;/*نفس الفكرة اللي فوق */
@@ -24,7 +24,7 @@ padding:10px 200px; /*  اول قيمة توب وبتن والقيمة الثا�
 
 .logo{
 text-decoration: none; /* خط الي تحت الرابط*/
-color: blue;
+color: navy;
 text-transform: uppercase; /* تتحكم بحجم الحروف*/
 font-weight: 700;
 font-size: 1.8em; /* الخط بيكون ريليتف*/
@@ -34,7 +34,7 @@ font-size: 1.8em; /* الخط بيكون ريليتف*/
 
 
 .navgation a{
-    color: rgb(25, 25, 26);
+    color: white;
     text-decoration: none;
     font-weight: 500; 
     font-size: 1.1em;
@@ -45,8 +45,8 @@ font-size: 1.8em; /* الخط بيكون ريليتف*/
 
 .navgation a:hover{
 
-color: white; /* لما تحط الماوس يتغير اللون */ 
-background-color: navy;
+color: navy; /* لما تحط الماوس يتغير اللون */ 
+background-color: white;
 }
 
 section{
